@@ -14,7 +14,9 @@ test.describe('Création d un utilisateur', () => {
     const user = buildUser();
 
     const response = await registerPage.register(user);
-
+    
+    // Ajout d'un commentaire pour le test
+    
     expect(response.status()).toBe(200);
     expect(await response.json()).toMatchObject({ message: 'Registered Successfully' });
   });
