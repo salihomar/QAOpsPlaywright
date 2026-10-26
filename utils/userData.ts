@@ -15,6 +15,8 @@ export interface UserData {
 export function buildUser(overrides: Partial<UserData> = {}): UserData {
   const unique = `${Date.now()}${Math.floor(Math.random() * 1000)}`;
 
+  // Ajout d'un commentaire pour le test
+  
   return {
     firstName: 'John',
     lastName: 'Doe',
